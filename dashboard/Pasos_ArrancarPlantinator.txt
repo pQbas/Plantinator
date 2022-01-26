@@ -1,0 +1,50 @@
+Para que funcione Plantinator:
+1. Arrancar Virtuabox con super user, el script está en Desktop de la PC del Labinm.
+  En el script tenemos la orden:
+    sudo VBoxManage startvm '/home/labinm-upao/VirtualBox VMs/plantinator/plantinator.vbox'
+    (plantinator 1234)
+  Esto se hace porque solo con SUDO podemos redirigir los puertos reservados (puerto 502 de modbus)
+  También se puede abrir una consola y ejecutar:
+    sudo virtualbox
+
+2. Nos podemos conectar a la consola del plantinator con el siguiente comando:
+  - ssh plantinator@localhost -p 10022
+
+3. Dentro de la máquina virtual los procesos que se tienen que arrancar son:
+  3.1 Servidor modbus:
+    - sudo python3 /home/plantinator/Seedling_vision/modbus_mqtt/modbus_gateway.py -serverPort 502
+  
+  3.2 Simulador (en la máquina principal del Labinm):
+    - python3 /home/labinm-upao//Seedling_vision/modbus_mqtt/modbus_gateway_viewer.py -serverIp 192.168.1.103 -serverPort 502
+    o
+    - python3 /home/labinm-upao/Seedling_vision/modbus_mqtt/modbus_gateway_interactive.py -serverPort 502 -serverIp 127.0.0.1
+
+
+#### RUTINA DE HOY ###############
+
+
+Inicializar el programa node-red:	
+	$ sudo node-red-start
+Inicializar el simulador de envio de datos ubicado en la carpeta /home/plantinator/simulador
+	$ python3 simularNodos.py
+
+
+
+#### COMANDOS BASICOS LINUX ######
+
+	
+cp mi_file.txt mi_new_file.txt		copiar
+mv first.txt second.txt			renombrar
+touch file.txt				crear un archivo
+pwd					conocer la ruta de tu actual directorio
+cd Directorio				abrir un directorio
+nano archivo.txt			abrir un archivo con el editor nano
+ctrl + shift + t			abrir una nueva pestaña en la terminal
+ctrl + alt + t				abrir una nueva terminal
+ctrl + shift + w			cerrar una pestaña del terminal
+ctrl + shift + q			cerrar la terminal completa
+
+
+
+
+/home/labinm-upao

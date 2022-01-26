@@ -1,0 +1,9 @@
+# Manage palette requirements
+
+node-red v1.3.5
+node-red-contrib-fs-ops v1.6.0
+node-red-contrib-google-cloud v0.0.24
+node-red-dashboard v2.29.1
+node-red-node-rbe v0.5.0
+node-red-node-tail v0.3.1
+
