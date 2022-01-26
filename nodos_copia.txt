@@ -1,0 +1,37 @@
+#este fichero guarda los valores a mandar a cada nodo
+
+robot/bandejas/alimentadora/reposicion=0
+robot/bandejas/alimentadora/porprocesar=48
+#abajo otra opcion de la de arriba
+robot/bandejas/alimentadora/cantidad=48
+robot/bandejas/alimentadora/bandejas=14
+robot/bandejas/claseA/reposicion=1
+robot/bandejas/claseA/cantidad=24
+robot/bandejas/claseA/bandejas=3
+robot/bandejas/claseB/reposicion=1
+robot/bandejas/claseB/cantidad=12
+robot/bandejas/claseB/bandejas=13
+robot/bandejas/claseC/reposicion=1
+robot/bandejas/claseC/cantidad=2
+robot/bandejas/claseC/bandejas=23
+
+robot/cartesiano/servoX/actual=15
+#robot/cartesiano/servoX/deseada=100
+robot/cartesiano/servoY/actual=11
+#robot/cartesiano/servoY/deseada=101
+robot/cartesiano/servoZ1/actual=12
+#robot/cartesiano/servoZ1/deseada=102
+robot/cartesiano/servoZ2/actual=13
+#robot/cartesiano/servoZ2/deseada=103
+robot/cartesiano/servoZ3/actual=14
+#robot/cartesiano/servoZ3/deseada=104
+
+robot/gripper/estado=ready
+robot/gripper/tarea=
+
+robot/vision/imagen1/ruta=planta1.jpg
+robot/vision/imagen1/calidad=A
+robot/vision/imagen2/ruta=planta2.jpg
+robot/vision/imagen2/calidad=C
+robot/vision/imagen3/ruta=planta3.jpg
+robot/vision/imagen3/calidad=A
