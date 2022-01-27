@@ -23,7 +23,7 @@ def on_message(client, userdata, message):
   except e:
     print("error con el mensaje")
 
-broker_address="127.0.0.1" #"iot.eclipse.org"
+broker_address="192.168.0.109" #"127.0.0.1" #"iot.eclipse.org"
 print("creating new instance")
 client = mqtt.Client("P1") #create new instance mqtt.Client()
 client.on_message = on_message
