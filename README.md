@@ -20,7 +20,17 @@
 
 ### Requirements de Python
 
-- paho.mqtt
+- opencv-python~=4.4.0.46
+- numpy~=1.19.4
+- pyrealsense2~=2.40.0.2483
+- Pillow~=8.1.0
+- pymodbus~=2.4.0
+- future~=0.18.2
+- paho-mqtt~=1.5.1
+- scikit-learn~=0.24.0
+- scikit-image~=0.17.2
+- matplotlib~=3.3.3
+- open3d~=0.12.0
 
 --------------------
 
@@ -63,15 +73,14 @@ Inicializar el simulador de envio de datos ubicado en la carpeta **. /simulador*
 ## Dudas frecuentes durante la instalación
 
 - ***¿Cómo desinstalar node-red?***
-
-	```
+     ```
      sudo npm -g remove node-red
      sudo npm -g remove node-red-admin
      rm -r ~/.node-red
-    ```
+     ```
 - ***¿Cómo instalar una versión especifica de node red?***
 
-	```
+    ```
     npm install -g --unsafe-perm node-red@1.3.5
     ```
 - ***¿Cómo instalar una versión especifica de algun paquete de node red?***
